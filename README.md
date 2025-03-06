@@ -30,8 +30,13 @@ npm i
 
 ## ☕ Usando a FreeGames
 
+
+
 ```
 Copie o arquivo .env.example para .env e edite-o
+```
+```
+Ao editar o webhook, apague o app de "discordapp.com", deixando apenas "discord.com"
 ```
 ```
 node index.js
