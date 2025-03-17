@@ -150,7 +150,6 @@ JSON.parse(process.env.RSS).forEach(async (element) => {
                         avatarURL: 'https://cdn.discordapp.com/app-icons/1222331266561736946/3f67dc154faf02afe12fa9630045cd12.png',
                         embeds: [embed]
                     });
-                    console.log('mandou o', infos.id)
                     appendId(infos.id)
                 }
             } catch (error) {
