@@ -7,8 +7,9 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Gahtee/FreeGames?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Gahtee/FreeGames?style=for-the-badge)
 
-> Este é um bot de discord com o propósito de movimentação de um chat utilizando postagem de reddit como base.
-> Ele pega as postagens e da comando para outro bot para fazer download caso tenha vídeo, se a postagem for apenas foto ou sem nada ele embedará e mandará no chat
+> Este é um bot de discord com o propósito de publicação de jogos grátis em um canal determinado.
+> Ele pega as postagens do xml e manda em determinado canal.
+> Nada disso seria possível sem o [lootscraper](https://github.com/eikowagenknecht/lootscraper). meus sinceros agradecimentos.
 
 
 ## 💻 Pré-requisitos
@@ -30,12 +31,16 @@ npm i
 
 ## ☕ Usando a FreeGames
 
+
+Copie o arquivo .env.example para .env e edite-o.
 ```
-Copie o arquivo .env.example para .env e edite-o. note que o webhook do discord tem que começar com discord.com. discordapp.com não funcionará, mas você pode apenas trocar o nome.
+cp .env.example .env
+nano .env
 ```
+```
+note que o webhook do discord tem que começar com discord.com. discordapp.com não funcionará, mas você pode apenas trocar o nome.
 ```
 Recomendo usar um cronjob para 5 minutos
-```
 ```
 node index.js
 ```
@@ -65,6 +70,15 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
           <b>Gahtee</b>
         </sub>
       </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/eikowagenknecht/lootscraper">
+        <img src="https://media.githubusercontent.com/media/eikowagenknecht/lootscraper/main/images/ls_640_360.png" width="100px;" alt="Foto do novo usuário"/><br>
+        <sub>
+          <b>Lootscraper</b>
+        </sub>
+      </a>
+    </td>
   </tr>
 </table>
 
